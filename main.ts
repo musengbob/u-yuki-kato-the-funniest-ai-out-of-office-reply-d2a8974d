@@ -15,3 +15,4 @@ const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), LINE, "utf8");
 console.log(`Wrote ${LINE.length} characters to ${join(outDir, "entry.txt")}`);
+console.log(LINE);
